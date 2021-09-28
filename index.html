@@ -26,7 +26,7 @@
   <form>
     <div class="mainWrapper">
       <input type="checkbox" id="submit">
-      <input type="text" id="todoInput" placeholder="testing">
+      <input type="text" id="todoInput" placeholder="create a new todo...">
     </div>
   </form> 
 
@@ -34,11 +34,17 @@
     <ul class="todoList"></ul>
   </div>
 
-  <footer>
+  <div class="valueContainer">
     <div id="itemsLeft">
       <span>0</span><p>items left</p>
     </div>
+  
+    <div id="clearCompleted">
+      <p>Clear Completed</p>
+    </div>
+  </div>
 
+  <footer>
 
     <div id="instructions">
       <ul>
@@ -48,9 +54,6 @@
       </ul>
     </div>
 
-    <div id="clearCompleted">
-`     <p>Clear Completed</p>
-    </div>
   </footer>
 
   <script src ='app.js'></script>
