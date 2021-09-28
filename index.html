@@ -9,22 +9,49 @@
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
   </style> 
   
-  <title>Frontend Mentor | Todo app</title>
+  <title>Todo List</title>
 
 </head>
 <body>
 
-  Todo
+  <header>
+    <div class="logo">
+      <h1>Todo</h1>
+    </div>
+    <div id="darkToLight">
+      <img src="/images/icon-sun.svg" alt="sun">
+    </div>
+  </header>
 
-  <!-- Add dynamic number --> items left
+  <form>
+    <div class="mainWrapper">
+      <input type="checkbox" id="submit">
+      <input type="text" id="todoInput" placeholder="testing">
+    </div>
+  </form> 
 
-  All
-  Active 
-  Completed
+  <div class="todoContainer">
+    <ul class="todoList"></ul>
+  </div>
 
-  Clear Completed
+  <footer>
+    <div id="itemsLeft">
+      <span>0</span><p>items left</p>
+    </div>
 
-  Drag and drop to reorder list
+
+    <div id="instructions">
+      <ul>
+        <li id= "all">All</li>
+        <li id= "active">Active</li>
+        <li id= "completed">Completed</li>
+      </ul>
+    </div>
+
+    <div id="clearCompleted">
+`     <p>Clear Completed</p>
+    </div>
+  </footer>
 
   <script src ='app.js'></script>
 </body>
