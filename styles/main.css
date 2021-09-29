@@ -113,6 +113,55 @@ form .mainWrapper input#todoInput::placeholder {
   color: #4d5066;
 }
 
+.valueContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.valueContainer .valueWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #25273c;
+  margin: 1em 0;
+  padding: 1em 2em 1em 2em;
+  border-radius: 0 0 1em 1em;
+}
+
+.valueContainer .valueWrapper .itemsLeftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #4d5066;
+  font-family: Josefin Sans;
+  font-size: 12px;
+}
+
+.valueContainer .valueWrapper .itemsLeftContainer span {
+  padding: 0 0.5em 0 0;
+}
+
+.valueContainer .valueWrapper #clearCompleted {
+  color: #4d5066;
+  font-family: Josefin Sans;
+  padding: 0 0 0 7.5em;
+  font-size: 12px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -88,6 +88,52 @@ form {
 
 }
 
+.valueContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .valueWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $veryDarkDesaturatedBlue;
+        margin: 1em 0;
+        padding: 1em 2em 1em 2em;
+        border-radius: 0 0 1em 1em;
+
+
+        .itemsLeftContainer {
+            display: flex;
+            justify-content: space-around;
+            color:$veryDarkGrayishBlue;
+            font-family: $fontFamily;
+            font-size: 12px;
+
+            span {
+
+                padding: 0 0.5em 0 0;
+            }
+        }
+
+        #clearCompleted {
+            color: $veryDarkGrayishBlue;
+            font-family: $fontFamily;
+            padding: 0 0 0 7.5em;
+            font-size: 12px;
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
 footer {
     display: flex;
     justify-content: center;

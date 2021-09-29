@@ -21,3 +21,4 @@ completed.addEventListener('click', function(){
     active.classList.remove('active');
     completed.classList.toggle('active');
 });
+
