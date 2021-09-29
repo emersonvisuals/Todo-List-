@@ -59,7 +59,7 @@ form .mainWrapper {
   background-color: #25273c;
   margin: 0;
   padding: 1em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 1em 1em 0 0;
 }
 
 form .mainWrapper input#submit {
@@ -113,6 +113,45 @@ form .mainWrapper input#todoInput::placeholder {
   color: #4d5066;
 }
 
+.todoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todoContainer .todoList {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  background-color: #25273c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 7.8em 0 7.8em;
+}
+
+.todoContainer .todoList .todo li {
+  font-family: Josefin Sans;
+  color: #fafafa;
+  padding: 1em 0;
+}
+
 .valueContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +191,7 @@ form .mainWrapper input#todoInput::placeholder {
 }
 
 .valueContainer .valueWrapper .itemsLeftContainer span {
+  color: #4d5066;
   padding: 0 0.5em 0 0;
 }
 
