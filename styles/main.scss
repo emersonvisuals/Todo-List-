@@ -49,6 +49,7 @@ form {
         margin: 0;
         width: 19.5em;
         border-radius: 1em 1em 0 0;
+        padding: 0 1.8em;
 
         input#todoInput {
             border:none;
@@ -58,11 +59,14 @@ form {
             padding: 2em 0;
             outline: none;
             color:$darkGrayishBlue;
-            text-align: center;
+            text-align: left;
+            width: 19.5em;
+            font-size: 1em;
         }
 
         input#todoInput::placeholder {
             color: $veryDarkGrayishBlue;
+            font-size: 1em;
         }
 
         input#todoInput.active::placeholder {
@@ -220,7 +224,7 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 2em 0;
-        margin: 1em 0 0 0;
+        margin: 1em 0 4em 0;
         width:19.5em;
         border-radius: 1em;
         background-color: $veryDarkDesaturatedBlue;
