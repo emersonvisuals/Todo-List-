@@ -23,29 +23,57 @@ completed.addEventListener('click', function(){
 });
 
 
-// enter 
+// variables
 const input = document.querySelector('#todoInput');
-const toDoList = document.querySelector('.todoList')
+const toDoList = document.querySelector('.todoList');
+const todoListTest = document.querySelector('.todoListTest');
 
 
+// enter on form
 input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
         e.preventDefault();
         input.value = '';
         console.log('Enter');
         
-        // toDo DIV
-        const toDoDiv = document.createElement('div');
-        toDoDiv.classList.add('todo');
-        // create LI 
-        const newToDo = document.createElement('li');
-        newToDo.innerText = 'item test';
-        newToDo.classList.add('todoItem');
-        toDoDiv.appendChild(newToDo);
-        // Append to List
-        toDoList.appendChild(toDoDiv);
+        // create li
+        const todoLi = document.createElement('li');
+        todoLi.classList.add('itemTest');
+        todoListTest.appendChild(todoLi);
+
+        // create checkBox
+        const checkBox = document.createElement('div');
+        checkBox.classList.add('checkBox');
+        checkBox.innerHTML = '<input type="checkbox" id="submit">';
+        todoLi.appendChild(checkBox);
+
+        // create text
+        const text = document.createElement('div');
+        text.classList.add('words');
+        text.innerText = 'testing words...';
+        todoLi.appendChild(text);
+
+        // create cross 
+        let cross = document.createElement('div');
+        cross.classList.add('cross');
+        cross.innerHTML = '<img src="/images/icon-cross.svg" alt="cross">';
+        todoLi.appendChild(cross);
+
+        cross.addEventListener('click', function(){
+            todoLi.removeChild(cross);
+            todoLi.removeChild(text);
+            todoLi.removeChild(checkBox);
+            todoListTest.removeChild(todoLi);
+        });
+
+        checkBox.addEventListener('click', function(){
+            console.log('clicked');
+            text.classList.toggle('active');
+        })
     } 
 }); 
 
+
+// removal of items
 
 

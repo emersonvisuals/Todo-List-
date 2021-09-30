@@ -51,6 +51,7 @@ form {
         border-radius: 1em 1em 0 0;
 
         input#submit {
+            visibility: hidden;
             appearance: none;
             background-color: transparent;
             border: 1px solid $lightGrayishBlue;
@@ -87,6 +88,71 @@ form {
     }
 
 }
+
+.todoTest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    ul.todoListTest {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $veryDarkDesaturatedBlue;
+        list-style: none;
+
+        li.itemTest {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 19.5em;
+            padding: 1em 0;
+        
+
+            .checkBox {
+                input#submit {
+                    appearance: none;
+                    background-color: transparent;
+                    border: 1px solid $lightGrayishBlue;
+                    border-radius: 100%;
+                    height: 30px;
+                    width: 30px;
+                    cursor: pointer;
+                }
+
+                input#submit:checked {
+                    background: url(/images/icon-check.svg), $darkGrayishBlue;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 75%;
+                    border:none;
+                    outline: none;
+                }
+            }
+            
+            .words {
+                color: $veryLightGray;
+                font-family: $fontFamily;
+                transition: 0.5s all;
+            }
+
+            .words.active {
+                opacity: 0.5;
+                transition: 0.5s all;
+                text-decoration: line-through;
+            }
+
+            .cross {
+
+            }
+        }
+    }
+}
+
+
+
 
 .todoContainer {
     display: flex;
@@ -126,7 +192,7 @@ form {
         justify-content: space-around;
         align-items: center;
         background-color: $veryDarkDesaturatedBlue;
-        margin: 1em 0;
+        margin: 0 0 1em 0;
         padding: 1em 2em 1em 2em;
         border-radius: 0 0 1em 1em;
 
