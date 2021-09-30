@@ -1,4 +1,3 @@
-
 // toggle footer 
 const all = document.querySelector('#all');
 const active = document.querySelector('#active');
@@ -22,14 +21,16 @@ completed.addEventListener('click', function(){
     completed.classList.toggle('active');
 });
 
+// remove placeholder
 
-// variables
+
+
+// enter on form
 const input = document.querySelector('#todoInput');
 const toDoList = document.querySelector('.todoList');
 const todoListTest = document.querySelector('.todoListTest');
 
 
-// enter on form
 input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
         e.preventDefault();

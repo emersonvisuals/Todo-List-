@@ -58,30 +58,8 @@ form .mainWrapper {
           align-items: center;
   background-color: #25273c;
   margin: 0;
-  padding: 1em 2em 1em 2em;
+  width: 19.5em;
   border-radius: 1em 1em 0 0;
-}
-
-form .mainWrapper input#submit {
-  visibility: hidden;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 1px solid #cacde8;
-  border-radius: 100%;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}
-
-form .mainWrapper input#submit:checked {
-  background: url(/images/icon-check.svg), #777a92;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 75%;
-  border: none;
-  outline: none;
 }
 
 form .mainWrapper input#todoInput {
@@ -92,10 +70,10 @@ form .mainWrapper input#todoInput {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 12px;
+  padding: 2em 0;
   outline: none;
   color: #777a92;
-  font-size: 1em;
+  text-align: center;
 }
 
 form .mainWrapper input#todoInput::-webkit-input-placeholder {
@@ -112,6 +90,22 @@ form .mainWrapper input#todoInput::-ms-input-placeholder {
 
 form .mainWrapper input#todoInput::placeholder {
   color: #4d5066;
+}
+
+form .mainWrapper input#todoInput.active::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+form .mainWrapper input#todoInput.active:-ms-input-placeholder {
+  visibility: hidden;
+}
+
+form .mainWrapper input#todoInput.active::-ms-input-placeholder {
+  visibility: hidden;
+}
+
+form .mainWrapper input#todoInput.active::placeholder {
+  visibility: hidden;
 }
 
 .todoTest {
@@ -185,14 +179,14 @@ form .mainWrapper input#todoInput::placeholder {
 .todoTest ul.todoListTest li.itemTest .words {
   color: #fafafa;
   font-family: Josefin Sans;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .todoTest ul.todoListTest li.itemTest .words.active {
   opacity: 0.5;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   text-decoration: line-through;
 }
 
@@ -257,8 +251,8 @@ form .mainWrapper input#todoInput::placeholder {
       -ms-flex-align: center;
           align-items: center;
   background-color: #25273c;
-  margin: 0 0 1em 0;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 0;
+  width: 19.5em;
   border-radius: 0 0 1em 1em;
 }
 
@@ -307,7 +301,9 @@ footer #instructions {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5em 2.25em 1.5em 2.25em;
+  padding: 2em 0;
+  margin: 1em 0 0 0;
+  width: 19.5em;
   border-radius: 1em;
   background-color: #25273c;
 }
