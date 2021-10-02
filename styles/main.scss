@@ -94,7 +94,7 @@ form {
         li.itemTest {
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 19.5em;
             padding: 1em 0;
         
@@ -108,6 +108,7 @@ form {
                     height: 30px;
                     width: 30px;
                     cursor: pointer;
+                    margin: 0 0 0 2em;
                 }
 
                 input#submit:checked {
@@ -124,6 +125,11 @@ form {
                 color: $veryLightGray;
                 font-family: $fontFamily;
                 transition: 0.3s all;
+                padding: 0;
+                word-wrap:break-word;
+                font-size: 12px;
+                max-width: 60%;
+                text-align: center;
             }
 
             .words.active {
@@ -133,6 +139,9 @@ form {
             }
 
             .cross {
+                margin: 0 2em 0 0;
+                cursor: pointer;
+
 
             }
         }

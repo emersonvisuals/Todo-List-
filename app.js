@@ -29,12 +29,12 @@ completed.addEventListener('click', function(){
 const input = document.querySelector('#todoInput');
 const toDoList = document.querySelector('.todoList');
 const todoListTest = document.querySelector('.todoListTest');
+const placeholder = document.querySelector('placeholder');
 
 
 input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
         e.preventDefault();
-        input.value = '';
         console.log('Enter');
         
         // create li
@@ -51,7 +51,7 @@ input.addEventListener('keydown', function(e) {
         // create text
         const text = document.createElement('div');
         text.classList.add('words');
-        text.innerText = 'testing words...';
+        text.innerText = input.value;
         todoLi.appendChild(text);
 
         // create cross 
@@ -70,11 +70,13 @@ input.addEventListener('keydown', function(e) {
         checkBox.addEventListener('click', function(){
             console.log('clicked');
             text.classList.toggle('active');
-        })
+        });
+
+        // remove text after enter 
+        input.value = '';
     } 
 }); 
 
+console.log(input.value);
 
 // removal of items
-
-
