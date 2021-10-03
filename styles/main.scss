@@ -61,7 +61,7 @@ form {
             color:$darkGrayishBlue;
             text-align: left;
             width: 19.5em;
-            font-size: 1em;
+            font-size: 15px;
         }
 
         input#todoInput::placeholder {
@@ -127,9 +127,12 @@ form {
                 transition: 0.3s all;
                 padding: 0;
                 word-wrap:break-word;
-                font-size: 12px;
-                max-width: 60%;
-                text-align: center;
+                font-size: 15px;
+                max-width: 42%;
+                text-align: left;
+                position: absolute;
+                margin: 0 0 0 5em;
+                line-height: 1.1em;
             }
 
             .words.active {
