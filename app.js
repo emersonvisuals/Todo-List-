@@ -21,8 +21,6 @@ completed.addEventListener('click', function(){
     completed.classList.toggle('active');
 });
 
-// remove placeholder
-
 
 
 // enter on form
@@ -60,23 +58,43 @@ input.addEventListener('keydown', function(e) {
         cross.innerHTML = '<img src="/images/icon-cross.svg" alt="cross">';
         todoLi.appendChild(cross);
 
-        cross.addEventListener('click', function(){
-            todoLi.removeChild(cross);
-            todoLi.removeChild(text);
-            todoLi.removeChild(checkBox);
-            todoListTest.removeChild(todoLi);
-        });
+        // activate checkbox
+        const checkBoxInput = document.querySelector('input#submit');
 
-        checkBox.addEventListener('click', function(){
+        checkBoxInput.addEventListener('click', function(){
             console.log('clicked');
             text.classList.toggle('active');
         });
 
         // remove text after enter 
         input.value = '';
-    } 
+        
+
+        //countUp numbers
+        let number = 0;
+        let span = document.querySelector('span#itemsLeft');
+        
+        function countUp(number) {
+            span.innerText = +span.innerText + number;
+        }
+
+        countUp(1);
+
+        // cross Click
+        cross.addEventListener('click', function(){
+            todoLi.removeChild(cross);
+            todoLi.removeChild(text);
+            todoLi.removeChild(checkBox);
+            todoListTest.removeChild(todoLi);
+
+            // countDown Click
+            function countDown(number) {
+                span.innerText = +span.innerText - number;
+            }
+
+            countDown(1);
+        });
+    }
 }); 
 
-console.log(input.value);
 
-// removal of items

@@ -186,7 +186,7 @@ form .mainWrapper input#todoInput.active::placeholder {
 }
 
 .todoTest ul.todoListTest li.itemTest .words {
-  color: #fafafa;
+  color: #cacde8;
   font-family: Josefin Sans;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
