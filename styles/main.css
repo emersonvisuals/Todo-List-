@@ -163,6 +163,10 @@ form .mainWrapper input#todoInput.active::placeholder {
   padding: 1em 0;
 }
 
+.todoTest ul.todoListTest li.itemTest .checkBox {
+  margin: 0 0 0 1.5em;
+}
+
 .todoTest ul.todoListTest li.itemTest .checkBox input#submit {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -173,7 +177,6 @@ form .mainWrapper input#todoInput.active::placeholder {
   height: 30px;
   width: 30px;
   cursor: pointer;
-  margin: 0 0 0 2em;
 }
 
 .todoTest ul.todoListTest li.itemTest .checkBox input#submit:checked {

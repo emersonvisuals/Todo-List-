@@ -21,15 +21,13 @@ completed.addEventListener('click', function(){
     completed.classList.toggle('active');
 });
 
-
-
 // enter on form
 const input = document.querySelector('#todoInput');
 const toDoList = document.querySelector('.todoList');
 const todoListTest = document.querySelector('.todoListTest');
 const placeholder = document.querySelector('placeholder');
 
-
+// enter Function
 input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
         e.preventDefault();
@@ -58,29 +56,25 @@ input.addEventListener('keydown', function(e) {
         cross.innerHTML = '<img src="/images/icon-cross.svg" alt="cross">';
         todoLi.appendChild(cross);
 
-        // activate checkbox
-        const checkBoxInput = document.querySelector('input#submit');
-
-        checkBoxInput.addEventListener('click', function(){
+        checkBox.addEventListener('click', function(){
             console.log('clicked');
             text.classList.toggle('active');
         });
 
         // remove text after enter 
         input.value = '';
-        
 
-        //countUp numbers
+
+        // countup Numbers
         let number = 0;
         let span = document.querySelector('span#itemsLeft');
         
         function countUp(number) {
             span.innerText = +span.innerText + number;
         }
-
         countUp(1);
 
-        // cross Click
+        // cross Clicked
         cross.addEventListener('click', function(){
             todoLi.removeChild(cross);
             todoLi.removeChild(text);
@@ -91,10 +85,16 @@ input.addEventListener('keydown', function(e) {
             function countDown(number) {
                 span.innerText = +span.innerText - number;
             }
-
             countDown(1);
         });
-    }
-}); 
 
+        // checkBox Clicked
+
+
+
+
+
+
+    } 
+}); 
 
