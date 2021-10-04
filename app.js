@@ -169,7 +169,17 @@ input.addEventListener('keydown', function(e) {
                     todoLi.removeChild(checkBox);
                     todoListTest.removeChild(todoLi);
                 } else {
-                    return
+                    // create li
+                    todoListTest.appendChild(todoLi);
+
+                    // create checkBox
+                    todoLi.appendChild(checkBox);
+
+                    // create text
+                    todoLi.appendChild(text);
+
+                    // create cross 
+                    todoLi.appendChild(cross);
                 }
             }
             activeActive();
@@ -182,7 +192,17 @@ input.addEventListener('keydown', function(e) {
 
             function completedActive() {
                 if(checkBox.classList.contains('active')) {
-                    return
+                    // create li
+                    todoListTest.appendChild(todoLi);
+
+                    // create checkBox
+                    todoLi.appendChild(checkBox);
+
+                    // create text
+                    todoLi.appendChild(text);
+
+                    // create cross 
+                    todoLi.appendChild(cross);
                 } else {
                     todoLi.removeChild(cross);
                     todoLi.removeChild(text);
