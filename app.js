@@ -69,34 +69,40 @@ input.addEventListener('keydown', function(e) {
         }
         countUp(1);
 
-        // cross Click
-        cross.addEventListener('click', function(){
-            todoLi.removeChild(cross);
-            todoLi.removeChild(text);
-            todoLi.removeChild(checkBox);
-            todoListTest.removeChild(todoLi);
-
-            // cross Count
-            function countDown(number) {
-                span.innerText = +span.innerText - number;
-            }
-            countDown(1);
-        });
-
         // checkBox Clicked
-        checkBox.addEventListener('click', function(){
+        checkBox.addEventListener('click', function() {
             console.log('clicked');
             text.classList.toggle('active');
             checkBox.classList.toggle('active');
 
-            if (checkBox.classList.toggle('active')) {
-                span.innerText = +span.innerText - number; 
-                console.log(test);
-            } else {
-                span.innerText = +span.innerText + number; 
+            function checkBoxCount (number) {
+                if (checkBox.classList.contains('active')) {
+                    span.innerText = +span.innerText - number;
+                } else {
+                    span.innerText = +span.innerText + number;
+                }
             }
+            checkBoxCount(1);
         });
 
+                // cross Click
+                cross.addEventListener('click', function(){
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+        
+                    // cross Count
+                    function countDown(number) {
+                        if (checkBox.classList.contains('active')) {
+                            span.innerText = +span.innerText;
+                        } else {
+                            span.innerText = +span.innerText - number;
+                        }
+                    }
+                    countDown(1);
+        
+                });
 
 
         /*
