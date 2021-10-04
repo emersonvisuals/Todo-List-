@@ -94,6 +94,7 @@ input.addEventListener('keydown', function(e) {
             todoLi.removeChild(text);
             todoLi.removeChild(checkBox);
             todoListTest.removeChild(todoLi);
+            cross.classList.add('active');
 
             // cross Count
             function countDown(number) {
@@ -127,18 +128,70 @@ input.addEventListener('keydown', function(e) {
             clearCompletedTask();
         });
 
+
+        
+        // All Tasks Button 
+        all.addEventListener('click', function(){
+            console.log('click');
+
+            function allTasksList() {
+                if(cross.classList.contains('active')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    // create li
+                    todoListTest.appendChild(todoLi);
+
+                    // create checkBox
+                    todoLi.appendChild(checkBox);
+
+                    // create text
+                    todoLi.appendChild(text);
+
+                    // create cross 
+                    todoLi.appendChild(cross);
+                }
+            }
+            allTasksList();
+        });
+
+        
         // Active Tasks Button 
         active.addEventListener('click', function(){
             console.log('clicked');
 
-            if(checkBox.classList.contains('active')) {
-                return
-            } else {
-                todoLi.removeChild(cross);
-                todoLi.removeChild(text);
-                todoLi.removeChild(checkBox);
-                todoListTest.removeChild(todoLi);
+            function activeActive() {
+                if(checkBox.classList.contains('active')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    return
+                }
             }
+            activeActive();
+        })
+
+
+        // Completed Tasks Button 
+        completed.addEventListener('click', function(){
+            console.log('clicked');
+
+            function completedActive() {
+                if(checkBox.classList.contains('active')) {
+                    return
+                } else {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                }
+            }
+            completedActive();
+
         });
 
     } 
