@@ -183,6 +183,18 @@ input.addEventListener('keydown', function(e) {
                 }
             }
             activeActive();
+
+            function activeCross() {
+                if(cross.classList.contains('active')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    return
+                }
+            }
+            activeCross();
         })
 
 
@@ -211,6 +223,18 @@ input.addEventListener('keydown', function(e) {
                 }
             }
             completedActive();
+
+            function completedCross() {
+                if(cross.classList.contains('active')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    return
+                }
+            }
+            completedCross();
 
         });
 
