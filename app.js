@@ -56,16 +56,11 @@ input.addEventListener('keydown', function(e) {
         cross.innerHTML = '<img src="/images/icon-cross.svg" alt="cross">';
         todoLi.appendChild(cross);
 
-        checkBox.addEventListener('click', function(){
-            console.log('clicked');
-            text.classList.toggle('active');
-        });
-
         // remove text after enter 
         input.value = '';
 
 
-        // countup Numbers
+        // enter Count
         let number = 0;
         let span = document.querySelector('span#itemsLeft');
         
@@ -74,14 +69,14 @@ input.addEventListener('keydown', function(e) {
         }
         countUp(1);
 
-        // cross Clicked
+        // cross Click
         cross.addEventListener('click', function(){
             todoLi.removeChild(cross);
             todoLi.removeChild(text);
             todoLi.removeChild(checkBox);
             todoListTest.removeChild(todoLi);
 
-            // countDown Click
+            // cross Count
             function countDown(number) {
                 span.innerText = +span.innerText - number;
             }
@@ -89,12 +84,38 @@ input.addEventListener('keydown', function(e) {
         });
 
         // checkBox Clicked
+        checkBox.addEventListener('click', function(){
+            console.log('clicked');
+            text.classList.toggle('active');
+            checkBox.classList.toggle('active');
+
+            if (checkBox.classList.toggle('active')) {
+                span.innerText = +span.innerText - number; 
+                console.log(test);
+            } else {
+                span.innerText = +span.innerText + number; 
+            }
+        });
 
 
 
+        /*
+        const checkBoxActive =  checkBox.classList.add('active');
+        const checkBoxNaked =  checkBox.classList.remove('active');
 
+        function myFunction() {
+            if (checkBoxActive) {
+                span.innerText = +span.innerText - 1;
+                console.log('active');
+            }
+            else {
+                span.innerText = +span.innerText;
+                console.log('notActive');
+            }
+        }
 
-
+        myFunction();
+        */
     } 
 }); 
 
