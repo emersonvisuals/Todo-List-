@@ -304,6 +304,10 @@ form .mainWrapper input#todoInput.active::placeholder {
   font-size: 12px;
 }
 
+.valueContainer .valueWrapper #clearCompleted p {
+  cursor: pointer;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

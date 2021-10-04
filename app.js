@@ -1,24 +1,24 @@
 // toggle footer 
-const all = document.querySelector('#all');
-const active = document.querySelector('#active');
-const completed = document.querySelector('#completed');
+let all = document.querySelector('#all');
+let active = document.querySelector('#active');
+let completed = document.querySelector('#completed');
 
 all.addEventListener('click', function(){
-    all.classList.toggle('active');
+    all.classList.add('active');
     active.classList.remove('active');
     completed.classList.remove('active');
 });
 
 active.addEventListener('click', function(){
     all.classList.remove('active');
-    active.classList.toggle('active');
+    active.classList.add('active');
     completed.classList.remove('active');
 });
 
 completed.addEventListener('click', function(){
     all.classList.remove('active');
     active.classList.remove('active');
-    completed.classList.toggle('active');
+    completed.classList.add('active');
 });
 
 // enter on form
@@ -39,7 +39,7 @@ input.addEventListener('keydown', function(e) {
         todoListTest.appendChild(todoLi);
 
         // create checkBox
-        const checkBox = document.createElement('div');
+        let checkBox = document.createElement('div');
         checkBox.classList.add('checkBox');
         checkBox.innerHTML = '<input type="checkbox" id="submit">';
         todoLi.appendChild(checkBox);
@@ -75,6 +75,8 @@ input.addEventListener('keydown', function(e) {
             text.classList.toggle('active');
             checkBox.classList.toggle('active');
 
+
+            // checkBox Count
             function checkBoxCount (number) {
                 if (checkBox.classList.contains('active')) {
                     span.innerText = +span.innerText - number;
@@ -85,43 +87,60 @@ input.addEventListener('keydown', function(e) {
             checkBoxCount(1);
         });
 
-                // cross Click
-                cross.addEventListener('click', function(){
+
+        // cross Click
+        cross.addEventListener('click', function(){
+            todoLi.removeChild(cross);
+            todoLi.removeChild(text);
+            todoLi.removeChild(checkBox);
+            todoListTest.removeChild(todoLi);
+
+            // cross Count
+            function countDown(number) {
+                if (checkBox.classList.contains('active')) {
+                    span.innerText = +span.innerText;
+                } else {
+                    span.innerText = +span.innerText - number;
+                }
+            }
+            countDown(1);
+        });
+
+
+        // Clear Completed Button
+        let clearCompleted = document.querySelector('#clearCompleted p');
+
+        clearCompleted.addEventListener('click', function(){
+            console.log('clicked button');
+
+            function clearCompletedTask() {
+                if (checkBox.classList.contains('active')) {
                     todoLi.removeChild(cross);
                     todoLi.removeChild(text);
                     todoLi.removeChild(checkBox);
                     todoListTest.removeChild(todoLi);
-        
-                    // cross Count
-                    function countDown(number) {
-                        if (checkBox.classList.contains('active')) {
-                            span.innerText = +span.innerText;
-                        } else {
-                            span.innerText = +span.innerText - number;
-                        }
-                    }
-                    countDown(1);
-        
-                });
-
-
-        /*
-        const checkBoxActive =  checkBox.classList.add('active');
-        const checkBoxNaked =  checkBox.classList.remove('active');
-
-        function myFunction() {
-            if (checkBoxActive) {
-                span.innerText = +span.innerText - 1;
-                console.log('active');
+                }
+                else {
+                    return
+                }
             }
-            else {
-                span.innerText = +span.innerText;
-                console.log('notActive');
-            }
-        }
+            clearCompletedTask();
+        });
 
-        myFunction();
-        */
+        // Active Tasks Button 
+        active.addEventListener('click', function(){
+            console.log('clicked');
+
+            if(checkBox.classList.contains('active')) {
+                return
+            } else {
+                todoLi.removeChild(cross);
+                todoLi.removeChild(text);
+                todoLi.removeChild(checkBox);
+                todoListTest.removeChild(todoLi);
+            }
+        });
+
     } 
 }); 
 
