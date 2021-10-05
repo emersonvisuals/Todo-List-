@@ -8,9 +8,9 @@ body.light {
     
 }
 
-header {
+header.light {
 
-    #darkToLight.light {
+    #darkToLight {
         background-image: url(/images/icon-moon.svg);
     }
 }
@@ -18,24 +18,24 @@ header {
 
 form.light {
 
-    .mainWrapper.light {
+    .mainWrapper {
         background-color: $veryLightGray;
 
 
-        input#todoInput.light {
+        input#todoInput {
             color:$darkGrayishBlue;
         }
 
-        input#todoInput.light::placeholder {
+        input#todoInput::placeholder {
             color: $lightGrayishBlue;
         }
     }
 }
 
 
-.todoTest {
+.todoTest.light {
 
-    ul.todoListTest.light {
+    ul.todoListTest {
         background-color: $veryLightGray;
         color: $darkGrayishBlue;
 
@@ -48,8 +48,6 @@ form.light {
         }
     }
 }
-
-
 
 .valueContainer.light {
 

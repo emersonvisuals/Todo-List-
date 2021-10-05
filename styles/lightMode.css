@@ -5,44 +5,44 @@ body.light {
   background-size: 175%;
 }
 
-header #darkToLight.light {
+header.light #darkToLight {
   background-image: url(/images/icon-moon.svg);
 }
 
-form.light .mainWrapper.light {
+form.light .mainWrapper {
   background-color: #fafafa;
 }
 
-form.light .mainWrapper.light input#todoInput.light {
+form.light .mainWrapper input#todoInput {
   color: #777a92;
 }
 
-form.light .mainWrapper.light input#todoInput.light::-webkit-input-placeholder {
+form.light .mainWrapper input#todoInput::-webkit-input-placeholder {
   color: #cacde8;
 }
 
-form.light .mainWrapper.light input#todoInput.light:-ms-input-placeholder {
+form.light .mainWrapper input#todoInput:-ms-input-placeholder {
   color: #cacde8;
 }
 
-form.light .mainWrapper.light input#todoInput.light::-ms-input-placeholder {
+form.light .mainWrapper input#todoInput::-ms-input-placeholder {
   color: #cacde8;
 }
 
-form.light .mainWrapper.light input#todoInput.light::placeholder {
+form.light .mainWrapper input#todoInput::placeholder {
   color: #cacde8;
 }
 
-.todoTest ul.todoListTest.light {
+.todoTest.light ul.todoListTest {
   background-color: #fafafa;
   color: #777a92;
 }
 
-.todoTest ul.todoListTest.light li.itemTest {
+.todoTest.light ul.todoListTest li.itemTest {
   color: #777a92;
 }
 
-.todoTest ul.todoListTest.light li.itemTest .words {
+.todoTest.light ul.todoListTest li.itemTest .words {
   color: #777a92;
 }
 

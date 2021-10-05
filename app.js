@@ -285,26 +285,21 @@ input.addEventListener('keydown', function(e) {
 
 
 // light mode 
-let bodyLight = document.body;
 let lightButton = document.querySelector('#darkToLight');
+let bodyLight = document.body;
+let headerLight = document.querySelector('header');
+let todoListLight = document.querySelector('.todoTest');
+let valueContainerLight = document.querySelector('.valueContainer');
 let formLight = document.querySelector('form');
-let mainWrapperLight = document.querySelector('.mainWrapper');
-let valueWrapperLight = document.querySelector('div.valueWrapper');
-let ulToDoListTestLight = document.querySelector('ul.todoListTest');
-let valueContainer = document.querySelector('.valueContainer');
-let valueWrapper = document.querySelector('.valueWrapper');
 let footer = document.querySelector('footer');
 
-console.log(valueWrapper);
 
 lightButton.addEventListener('click', function(){
+    console.log('clicked');
     bodyLight.classList.toggle('light');
-    lightButton.classList.toggle('light');
+    headerLight.classList.toggle('light');
+    todoListLight.classList.toggle('light');
+    valueContainerLight.classList.toggle('light');
     formLight.classList.toggle('light');
-    mainWrapperLight.classList.toggle('light');
-    valueWrapperLight.classList.toggle('light');
-    ulToDoListTestLight.classList.toggle('light');
-    valueContainer.classList.toggle('light');
-    valueWrapper.classList.toggle('light');
     footer.classList.toggle('light');
 });
