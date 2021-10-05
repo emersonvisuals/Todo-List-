@@ -1,0 +1,80 @@
+body.light {
+  background: url(/images/bg-desktop-light.jpg), #e4e5f1;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 175%;
+}
+
+header #darkToLight.light {
+  background-image: url(/images/icon-moon.svg);
+}
+
+form.light .mainWrapper.light {
+  background-color: #fafafa;
+}
+
+form.light .mainWrapper.light input#todoInput.light {
+  color: #777a92;
+}
+
+form.light .mainWrapper.light input#todoInput.light::-webkit-input-placeholder {
+  color: #cacde8;
+}
+
+form.light .mainWrapper.light input#todoInput.light:-ms-input-placeholder {
+  color: #cacde8;
+}
+
+form.light .mainWrapper.light input#todoInput.light::-ms-input-placeholder {
+  color: #cacde8;
+}
+
+form.light .mainWrapper.light input#todoInput.light::placeholder {
+  color: #cacde8;
+}
+
+.todoTest ul.todoListTest.light {
+  background-color: #fafafa;
+  color: #777a92;
+}
+
+.todoTest ul.todoListTest.light li.itemTest {
+  color: #777a92;
+}
+
+.todoTest ul.todoListTest.light li.itemTest .words {
+  color: #777a92;
+}
+
+.valueContainer.light .valueWrapper {
+  background-color: #fafafa;
+}
+
+footer.light #instructions {
+  background-color: #fafafa;
+}
+
+footer.light #instructions ul #all {
+  color: #cacde8;
+}
+
+footer.light #instructions ul #all.active {
+  color: #25273c;
+}
+
+footer.light #instructions ul #active {
+  color: #cacde8;
+}
+
+footer.light #instructions ul #active.active {
+  color: #25273c;
+}
+
+footer.light #instructions ul #completed {
+  color: #cacde8;
+}
+
+footer.light #instructions ul #completed.active {
+  color: #25273c;
+}
+/*# sourceMappingURL=lightMode.css.map */

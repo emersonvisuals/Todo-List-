@@ -1,0 +1,95 @@
+@import "./_variables";
+
+body.light {
+    background: url(/images/bg-desktop-light.jpg), $veryLightGrayishBlue;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 175%;
+    
+}
+
+header {
+
+    #darkToLight.light {
+        background-image: url(/images/icon-moon.svg);
+    }
+}
+
+
+form.light {
+
+    .mainWrapper.light {
+        background-color: $veryLightGray;
+
+
+        input#todoInput.light {
+            color:$darkGrayishBlue;
+        }
+
+        input#todoInput.light::placeholder {
+            color: $lightGrayishBlue;
+        }
+    }
+}
+
+
+.todoTest {
+
+    ul.todoListTest.light {
+        background-color: $veryLightGray;
+        color: $darkGrayishBlue;
+
+        li.itemTest {
+            color: $darkGrayishBlue;
+            
+            .words {
+                color: $darkGrayishBlue;
+            }
+        }
+    }
+}
+
+
+
+.valueContainer.light {
+
+    .valueWrapper {
+        background-color: $veryLightGray;
+    }
+}
+
+
+footer.light {
+
+    #instructions {
+
+        background-color: $veryLightGray;
+
+        ul {
+
+            #all {
+                color: $lightGrayishBlue;
+            }
+
+            #all.active {
+                color: $veryDarkDesaturatedBlue;
+            }
+
+            #active {
+                color:  $lightGrayishBlue;
+            }
+
+            #active.active {
+                color: $veryDarkDesaturatedBlue;
+            }
+            
+            #completed {
+                color:  $lightGrayishBlue;
+            }
+
+            #completed.active {
+                color: $veryDarkDesaturatedBlue;
+            }
+        }
+    }
+}

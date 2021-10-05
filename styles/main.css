@@ -31,6 +31,12 @@ header .logo h1 {
 }
 
 header #darkToLight {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(/images/icon-sun.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
 }
 
