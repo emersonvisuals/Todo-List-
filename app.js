@@ -71,7 +71,7 @@ input.addEventListener('keydown', function(e) {
 
         // checkBox Clicked
         checkBox.addEventListener('click', function() {
-            console.log('clicked');
+            console.log('checkbox clicked');
             text.classList.toggle('active');
             checkBox.classList.toggle('active');
 
@@ -113,7 +113,7 @@ input.addEventListener('keydown', function(e) {
         let clearCompleted = document.querySelector('#clearCompleted p');
 
         clearCompleted.addEventListener('click', function(){
-            console.log('clicked button');
+            console.log('clear completed clicked');
 
             function clearCompletedTask() {
                 if (checkBox.classList.contains('active')) {
@@ -133,7 +133,7 @@ input.addEventListener('keydown', function(e) {
 
         // All Tasks Button 
         all.addEventListener('click', function(){
-            console.log('click');
+            console.log('all tasks clicked');
 
             // remove elements containing cross
             function allTasksCross() {
@@ -175,7 +175,7 @@ input.addEventListener('keydown', function(e) {
 
         // Active Tasks Button 
         active.addEventListener('click', function(){
-            console.log('clicked');
+            console.log('active tasks clicked');
 
             function activeActive() {
                 if(checkBox.classList.contains('active')) {
@@ -229,7 +229,7 @@ input.addEventListener('keydown', function(e) {
 
         // Completed Tasks Button 
         completed.addEventListener('click', function(){
-            console.log('clicked');
+            console.log('completed tasks clicked');
 
             function completedActive() {
                 if(checkBox.classList.contains('active')) {

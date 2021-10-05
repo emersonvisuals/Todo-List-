@@ -262,37 +262,37 @@ footer {
 
             #all {
                 color: $veryDarkGrayishBlue;
-                transition: 0.5s all;
+                transition: 0.3s all;
                 cursor: pointer;
             }
 
             #all.active {
                 color: $veryLightGray;
-                transition:  0.5s all;
+                transition:  0.3s all;
                 cursor: pointer;
             }
 
             #active {
                 color:  $veryDarkGrayishBlue;
-                transition: 0.5s all;
+                transition: 0.3s all;
                 cursor: pointer;
             }
 
             #active.active {
                 color: $veryLightGray;
-                transition: 0.5s all;
+                transition: 0.3s all;
                 cursor: pointer;
             }
             
             #completed {
                 color:  $veryDarkGrayishBlue;
-                transition: 0.5s all;
+                transition: 0.3s all;
                 cursor: pointer;
             }
 
             #completed.active {
                 color: $veryLightGray;
-                transition: 0.5s all;
+                transition: 0.3s all;
                 cursor: pointer;
             }
         }

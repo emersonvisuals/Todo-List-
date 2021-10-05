@@ -359,43 +359,43 @@ footer #instructions ul li {
 
 footer #instructions ul #all {
   color: #4d5066;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 
 footer #instructions ul #all.active {
   color: #fafafa;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 
 footer #instructions ul #active {
   color: #4d5066;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 
 footer #instructions ul #active.active {
   color: #fafafa;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 
 footer #instructions ul #completed {
   color: #4d5066;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 
 footer #instructions ul #completed.active {
   color: #fafafa;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
