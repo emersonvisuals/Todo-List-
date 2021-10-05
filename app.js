@@ -108,6 +108,7 @@ input.addEventListener('keydown', function(e) {
         });
 
 
+
         // Clear Completed Button
         let clearCompleted = document.querySelector('#clearCompleted p');
 
@@ -120,6 +121,7 @@ input.addEventListener('keydown', function(e) {
                     todoLi.removeChild(text);
                     todoLi.removeChild(checkBox);
                     todoListTest.removeChild(todoLi);
+                    checkBox.classList.add('clearCompleted');
                 }
                 else {
                     return
@@ -129,12 +131,12 @@ input.addEventListener('keydown', function(e) {
         });
 
 
-        
         // All Tasks Button 
         all.addEventListener('click', function(){
             console.log('click');
 
-            function allTasksList() {
+            // remove elements containing cross
+            function allTasksCross() {
                 if(cross.classList.contains('active')) {
                     todoLi.removeChild(cross);
                     todoLi.removeChild(text);
@@ -154,10 +156,23 @@ input.addEventListener('keydown', function(e) {
                     todoLi.appendChild(cross);
                 }
             }
-            allTasksList();
+            allTasksCross();
+
+            // remove elements containing clear completed
+            function allTasksClearCompleted () {
+                if(checkBox.classList.contains('active') && checkBox.classList.contains('clearCompleted')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    return
+                }
+            }
+            allTasksClearCompleted();
         });
 
-        
+
         // Active Tasks Button 
         active.addEventListener('click', function(){
             console.log('clicked');
@@ -184,6 +199,7 @@ input.addEventListener('keydown', function(e) {
             }
             activeActive();
 
+            // remove elements containing cross
             function activeCross() {
                 if(cross.classList.contains('active')) {
                     todoLi.removeChild(cross);
@@ -195,6 +211,19 @@ input.addEventListener('keydown', function(e) {
                 }
             }
             activeCross();
+
+            // remove elements containing clear completed
+            function activeTasksClearCompleted () {
+                if(checkBox.classList.contains('active') && checkBox.classList.contains('clearCompleted')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    return
+                }
+            }
+            activeTasksClearCompleted();
         })
 
 
@@ -224,6 +253,7 @@ input.addEventListener('keydown', function(e) {
             }
             completedActive();
 
+            // remove elements containing cross
             function completedCross() {
                 if(cross.classList.contains('active')) {
                     todoLi.removeChild(cross);
@@ -236,8 +266,20 @@ input.addEventListener('keydown', function(e) {
             }
             completedCross();
 
-        });
+            // remove elements containing clear completed
+            function completedTasksClearCompleted () {
+                if(checkBox.classList.contains('active') && checkBox.classList.contains('clearCompleted')) {
+                    todoLi.removeChild(cross);
+                    todoLi.removeChild(text);
+                    todoLi.removeChild(checkBox);
+                    todoListTest.removeChild(todoLi);
+                } else {
+                    return
+                }
+            }
+            completedTasksClearCompleted();
 
+        });
     } 
 }); 
 
