@@ -6,10 +6,10 @@
 }
 
 body {
-  background: url(/images/bg-desktop-dark.jpg), #161722;
+  background: url(/images/bg-mobile-dark.jpg), black;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 175%;
+  background-size: contain;
 }
 
 header {
@@ -20,14 +20,39 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 1em 0;
 }
 
 header .logo h1 {
   font-family: Josefin Sans;
-  font-weight: 400;
+  font-weight: 700;
   color: #fafafa;
   text-transform: uppercase;
   letter-spacing: 0.25em;
+  -webkit-animation: logoAnimation 1s ease-in-out;
+          animation: logoAnimation 1s ease-in-out;
+}
+
+@-webkit-keyframes logoAnimation {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 header #darkToLight {
@@ -38,6 +63,30 @@ header #darkToLight {
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+  -webkit-animation: iconAnimation 1s ease-in-out;
+          animation: iconAnimation 1s ease-in-out;
+}
+
+@-webkit-keyframes iconAnimation {
+  0% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes iconAnimation {
+  0% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 form {
@@ -50,6 +99,7 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: -0.75em 0 0 0;
 }
 
 form .mainWrapper {
@@ -63,9 +113,9 @@ form .mainWrapper {
       -ms-flex-align: center;
           align-items: center;
   background-color: #25273c;
-  margin: 0;
+  margin: 0 0 1em 0;
   width: 19.5em;
-  border-radius: 1em 1em 0 0;
+  border-radius: 0.5em;
   padding: 0 1.8em;
 }
 
@@ -77,7 +127,7 @@ form .mainWrapper input#todoInput {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 2em 0;
+  padding: 1.5em 0;
   outline: none;
   color: #777a92;
   text-align: left;
@@ -167,10 +217,15 @@ form .mainWrapper input#todoInput.active::placeholder {
           justify-content: space-between;
   width: 19.5em;
   padding: 1em 0;
+  border-bottom: solid #777a92 0.05px;
 }
 
 .todoTest ul.todoListTest li.itemTest .checkBox {
-  margin: 0 0 0 1.5em;
+  content: '';
+  margin: 0 0 0 1em;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
 }
 
 .todoTest ul.todoListTest li.itemTest .checkBox input#submit {
@@ -284,7 +339,7 @@ form .mainWrapper input#todoInput.active::placeholder {
   background-color: #25273c;
   padding: 1em 0;
   width: 19.5em;
-  border-radius: 0 0 1em 1em;
+  border-radius: 0 0 0.5em 0.5em;
 }
 
 .valueContainer .valueWrapper .itemsLeftContainer {
@@ -339,7 +394,7 @@ footer #instructions {
   padding: 2em 0;
   margin: 1em 0 4em 0;
   width: 19.5em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background-color: #25273c;
 }
 

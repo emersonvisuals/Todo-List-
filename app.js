@@ -70,6 +70,8 @@ input.addEventListener('keydown', function(e) {
         countUp(1);
 
         // checkBox Clicked
+        let checkBoxToggle = document.querySelector('input#submit');
+
         checkBox.addEventListener('click', function() {
             console.log('checkbox clicked');
             text.classList.toggle('active');

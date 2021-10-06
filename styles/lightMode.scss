@@ -1,10 +1,10 @@
 @import "./_variables";
 
 body.light {
-    background: url(/images/bg-desktop-light.jpg), $veryLightGrayishBlue;
+    background: url(/images/bg-mobile-light.jpg), $veryLightGrayishBlue;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 175%;
+    background-size: contain;
     
 }
 
@@ -41,6 +41,7 @@ form.light {
 
         li.itemTest {
             color: $darkGrayishBlue;
+            border-bottom: solid $lightGrayishBlue 0.05px;
             
             .words {
                 color: $darkGrayishBlue;

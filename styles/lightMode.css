@@ -1,8 +1,8 @@
 body.light {
-  background: url(/images/bg-desktop-light.jpg), #e4e5f1;
+  background: url(/images/bg-mobile-light.jpg), #e4e5f1;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 175%;
+  background-size: contain;
 }
 
 header.light #darkToLight {
@@ -40,6 +40,7 @@ form.light .mainWrapper input#todoInput::placeholder {
 
 .todoTest.light ul.todoListTest li.itemTest {
   color: #777a92;
+  border-bottom: solid #cacde8 0.05px;
 }
 
 .todoTest.light ul.todoListTest li.itemTest .words {

@@ -9,10 +9,10 @@
 }
 
 body {
-    background: url(/images/bg-desktop-dark.jpg), $veryDarkBlue;
+    background: url(/images/bg-mobile-dark.jpg), black;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 175%;
+    background-size: contain;
     
 }
 
@@ -20,17 +20,28 @@ header {
     padding: 10%;
     display: flex;
     justify-content: space-between;
+    margin: 1em 0;
 
     .logo {
 
         h1 {
             font-family: $fontFamily;
-            font-weight: 400;
+            font-weight: 700;
             color: $veryLightGray;
             text-transform: uppercase;
             letter-spacing: 0.25em;
-
+            animation: logoAnimation 1s ease-in-out;
         }
+
+        
+    @keyframes logoAnimation {
+        0% {
+            transform: translateX(-200px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
     }
 
     #darkToLight {
@@ -41,7 +52,16 @@ header {
         background-repeat: no-repeat;
         background-size: contain;
         cursor: pointer;
+        animation: iconAnimation 1s ease-in-out;
+    }
 
+    @keyframes iconAnimation {
+        0% {
+            transform: translateX(200px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
     }
 }
 
@@ -49,15 +69,16 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -0.75em 0 0 0;
 
     .mainWrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $veryDarkDesaturatedBlue;
-        margin: 0;
+        margin: 0 0 1em 0;
         width: 19.5em;
-        border-radius: 1em 1em 0 0;
+        border-radius: 0.5em;
         padding: 0 1.8em;
 
         input#todoInput {
@@ -65,12 +86,13 @@ form {
             background-color: transparent;
             box-shadow: transparent;
             appearance: none;
-            padding: 2em 0;
+            padding: 1.5em 0;
             outline: none;
             color:$darkGrayishBlue;
             text-align: left;
             width: 19.5em;
             font-size: 15px;
+
         }
 
         input#todoInput::placeholder {
@@ -106,10 +128,15 @@ form {
             justify-content: space-between;
             width: 19.5em;
             padding: 1em 0;
+            border-bottom: solid $darkGrayishBlue 0.05px;
         
 
             .checkBox {
-                margin: 0 0 0 1.5em;
+                content: '';
+                margin: 0 0 0 1em;
+                width:30px;
+                height: 30px;
+                border-radius: 100%;
 
 
                 input#submit {
@@ -205,7 +232,7 @@ form {
         background-color: $veryDarkDesaturatedBlue;
         padding:1em 0;
         width:19.5em;
-        border-radius: 0 0 1em 1em;
+        border-radius: 0 0 0.5em 0.5em;
 
 
         .itemsLeftContainer {
@@ -253,7 +280,7 @@ footer {
         padding: 2em 0;
         margin: 1em 0 4em 0;
         width:19.5em;
-        border-radius: 1em;
+        border-radius: 0.5em;
         background-color: $veryDarkDesaturatedBlue;
 
         ul {
