@@ -3,6 +3,8 @@ let all = document.querySelector('#all');
 let active = document.querySelector('#active');
 let completed = document.querySelector('#completed');
 
+all.classList.add('active');
+
 all.addEventListener('click', function(){
     all.classList.add('active');
     active.classList.remove('active');
@@ -282,6 +284,8 @@ input.addEventListener('keydown', function(e) {
             completedTasksClearCompleted();
 
         });
+
+        // disable enter 
     } 
 }); 
 

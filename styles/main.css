@@ -114,7 +114,7 @@ form .mainWrapper {
           align-items: center;
   background-color: #25273c;
   margin: 0 0 1em 0;
-  width: 19.5em;
+  width: 22em;
   border-radius: 0.5em;
   padding: 0 1.8em;
 }
@@ -131,7 +131,7 @@ form .mainWrapper input#todoInput {
   outline: none;
   color: #777a92;
   text-align: left;
-  width: 19.5em;
+  width: 22em;
   font-size: 15px;
 }
 
@@ -215,16 +215,16 @@ form .mainWrapper input#todoInput.active::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 19.5em;
+  width: 22em;
   padding: 1em 0;
-  border-bottom: solid #777a92 0.05px;
+  border-bottom: solid #4d5066 0.5px;
 }
 
 .todoTest ul.todoListTest li.itemTest .checkBox {
   content: '';
   margin: 0 0 0 1em;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 100%;
 }
 
@@ -233,19 +233,19 @@ form .mainWrapper input#todoInput.active::placeholder {
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 1px solid #cacde8;
+  border: 1px solid #4d5066;
   border-radius: 100%;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   cursor: pointer;
 }
 
 .todoTest ul.todoListTest li.itemTest .checkBox input#submit:checked {
-  background: url(/images/icon-check.svg), #777a92;
+  background: url(/images/icon-check.svg), linear-gradient(101deg, #57ddff 0%, #c058f3 100%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 75%;
-  border: none;
+  background-size: 65%, cover;
+  border: 3px solid linear-gradient(101deg, #57ddff 0%, #c058f3 100%);
   outline: none;
 }
 
@@ -260,19 +260,19 @@ form .mainWrapper input#todoInput.active::placeholder {
   max-width: 42%;
   text-align: left;
   position: absolute;
-  margin: 0 0 0 5em;
+  margin: 0 0 0 4em;
   line-height: 1.1em;
 }
 
 .todoTest ul.todoListTest li.itemTest .words.active {
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-decoration: line-through;
 }
 
 .todoTest ul.todoListTest li.itemTest .cross {
-  margin: 0 2em 0 0;
+  margin: 0.2em 2em 0 0;
   cursor: pointer;
 }
 
@@ -338,7 +338,7 @@ form .mainWrapper input#todoInput.active::placeholder {
           align-items: center;
   background-color: #25273c;
   padding: 1em 0;
-  width: 19.5em;
+  width: 22em;
   border-radius: 0 0 0.5em 0.5em;
 }
 
@@ -391,9 +391,9 @@ footer #instructions {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2em 0;
+  padding: 1em 0;
   margin: 1em 0 4em 0;
-  width: 19.5em;
+  width: 22em;
   border-radius: 0.5em;
   background-color: #25273c;
 }
@@ -415,7 +415,8 @@ footer #instructions ul {
 
 footer #instructions ul li {
   font-family: Josefin Sans;
-  padding: 0 1em;
+  padding: 0 0.75em;
+  font-size: 15px;
 }
 
 footer #instructions ul #all {
@@ -423,10 +424,11 @@ footer #instructions ul #all {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
+  font-weight: 700;
 }
 
 footer #instructions ul #all.active {
-  color: #fafafa;
+  color: #3a7bfd;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
@@ -437,10 +439,11 @@ footer #instructions ul #active {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
+  font-weight: 700;
 }
 
 footer #instructions ul #active.active {
-  color: #fafafa;
+  color: #3a7bfd;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
@@ -451,10 +454,11 @@ footer #instructions ul #completed {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
+  font-weight: 700;
 }
 
 footer #instructions ul #completed.active {
-  color: #fafafa;
+  color: #3a7bfd;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;

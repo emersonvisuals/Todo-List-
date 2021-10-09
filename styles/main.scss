@@ -77,7 +77,7 @@ form {
         align-items: center;
         background-color: $veryDarkDesaturatedBlue;
         margin: 0 0 1em 0;
-        width: 19.5em;
+        width: 22em;
         border-radius: 0.5em;
         padding: 0 1.8em;
 
@@ -90,7 +90,7 @@ form {
             outline: none;
             color:$darkGrayishBlue;
             text-align: left;
-            width: 19.5em;
+            width: 22em;
             font-size: 15px;
 
         }
@@ -126,35 +126,35 @@ form {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 19.5em;
+            width: 22em;
             padding: 1em 0;
-            border-bottom: solid $darkGrayishBlue 0.05px;
+            border-bottom: solid $veryDarkGrayishBlue 0.5px;
         
 
             .checkBox {
                 content: '';
                 margin: 0 0 0 1em;
-                width:30px;
-                height: 30px;
+                width:25px;
+                height: 25px;
                 border-radius: 100%;
 
 
                 input#submit {
                     appearance: none;
                     background-color: transparent;
-                    border: 1px solid $lightGrayishBlue;
+                    border: 1px solid $veryDarkGrayishBlue;
                     border-radius: 100%;
-                    height: 30px;
-                    width: 30px;
+                    height: 25px;
+                    width: 25px;
                     cursor: pointer;
                 }
 
                 input#submit:checked {
-                    background: url(/images/icon-check.svg), $darkGrayishBlue;
+                    background: url(/images/icon-check.svg), linear-gradient(101deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-size: 75%;
-                    border:none;
+                    background-size: 65%, cover;
+                    border:3px solid linear-gradient(101deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%) ;
                     outline: none;
                 }
             }
@@ -169,18 +169,18 @@ form {
                 max-width: 42%;
                 text-align: left;
                 position: absolute;
-                margin: 0 0 0 5em;
+                margin: 0 0 0 4em;
                 line-height: 1.1em;
             }
 
             .words.active {
-                opacity: 0.5;
+                opacity: 0.3;
                 transition: 0.3s all;
                 text-decoration: line-through;
             }
 
             .cross {
-                margin: 0 2em 0 0;
+                margin: 0.2em 2em 0 0;
                 cursor: pointer;
 
 
@@ -231,7 +231,7 @@ form {
         align-items: center;
         background-color: $veryDarkDesaturatedBlue;
         padding:1em 0;
-        width:19.5em;
+        width: 22em;
         border-radius: 0 0 0.5em 0.5em;
 
 
@@ -277,9 +277,9 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2em 0;
+        padding: 1em 0;
         margin: 1em 0 4em 0;
-        width:19.5em;
+        width: 22em;
         border-radius: 0.5em;
         background-color: $veryDarkDesaturatedBlue;
 
@@ -293,17 +293,19 @@ footer {
 
             li {
                 font-family: $fontFamily;
-                padding: 0 1em;
+                padding: 0 0.75em;
+                font-size: 15px;
             }
 
             #all {
                 color: $veryDarkGrayishBlue;
                 transition: 0.3s all;
                 cursor: pointer;
+                font-weight: 700;
             }
 
             #all.active {
-                color: $veryLightGray;
+                color: $brightBlue;
                 transition:  0.3s all;
                 cursor: pointer;
             }
@@ -312,10 +314,11 @@ footer {
                 color:  $veryDarkGrayishBlue;
                 transition: 0.3s all;
                 cursor: pointer;
+                font-weight: 700;
             }
 
             #active.active {
-                color: $veryLightGray;
+                color: $brightBlue;
                 transition: 0.3s all;
                 cursor: pointer;
             }
@@ -324,10 +327,11 @@ footer {
                 color:  $veryDarkGrayishBlue;
                 transition: 0.3s all;
                 cursor: pointer;
+                font-weight: 700;
             }
 
             #completed.active {
-                color: $veryLightGray;
+                color: $brightBlue;
                 transition: 0.3s all;
                 cursor: pointer;
             }
