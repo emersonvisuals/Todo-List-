@@ -1,0 +1,421 @@
+@media only screen and (min-width: 750px) {
+  body {
+    background: url(/images/bg-desktop-dark.jpg), black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+  }
+  header {
+    padding: 7em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  header .logo {
+    position: absolute;
+    margin: 0 27em 0 0;
+  }
+  header .logo h1 {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    -webkit-animation: logoAnimation 1s ease-in-out;
+            animation: logoAnimation 1s ease-in-out;
+  }
+  @-webkit-keyframes logoAnimation {
+    0% {
+      -webkit-transform: translateX(-200px);
+              transform: translateX(-200px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes logoAnimation {
+    0% {
+      -webkit-transform: translateX(-200px);
+              transform: translateX(-200px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  header #darkToLight {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/icon-sun.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    -webkit-animation: iconAnimation 1s ease-in-out;
+            animation: iconAnimation 1s ease-in-out;
+    margin: 0 0 0 33em;
+  }
+  @-webkit-keyframes iconAnimation {
+    0% {
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes iconAnimation {
+    0% {
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -2em 0 0 0;
+  }
+  form .mainWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #25273c;
+    margin: 0 0 1em 0;
+    width: 35em;
+    border-radius: 0.5em;
+    padding: 0 1.8em;
+  }
+  form .mainWrapper input#todoInput {
+    border: none;
+    background-color: transparent;
+    -webkit-box-shadow: transparent;
+            box-shadow: transparent;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 1.5em 0;
+    outline: none;
+    color: #777a92;
+    text-align: left;
+    width: 35em;
+    font-size: 15px;
+  }
+  form .mainWrapper input#todoInput::-webkit-input-placeholder {
+    color: #4d5066;
+    font-size: 1em;
+  }
+  form .mainWrapper input#todoInput:-ms-input-placeholder {
+    color: #4d5066;
+    font-size: 1em;
+  }
+  form .mainWrapper input#todoInput::-ms-input-placeholder {
+    color: #4d5066;
+    font-size: 1em;
+  }
+  form .mainWrapper input#todoInput::placeholder {
+    color: #4d5066;
+    font-size: 1em;
+  }
+  form .mainWrapper input#todoInput.active::-webkit-input-placeholder {
+    visibility: hidden;
+  }
+  form .mainWrapper input#todoInput.active:-ms-input-placeholder {
+    visibility: hidden;
+  }
+  form .mainWrapper input#todoInput.active::-ms-input-placeholder {
+    visibility: hidden;
+  }
+  form .mainWrapper input#todoInput.active::placeholder {
+    visibility: hidden;
+  }
+  .todoTest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .todoTest ul.todoListTest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #25273c;
+    list-style: none;
+  }
+  .todoTest ul.todoListTest li.itemTest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em 0.5em;
+    border-bottom: solid #4d5066 0.5px;
+    width: 35em;
+  }
+  .todoTest ul.todoListTest li.itemTest .checkBox {
+    content: '';
+    margin: 0 0 0 1em;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+  }
+  .todoTest ul.todoListTest li.itemTest .checkBox input#submit {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 1px solid #4d5066;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+  .todoTest ul.todoListTest li.itemTest .checkBox input#submit:checked {
+    background: url(/images/icon-check.svg), linear-gradient(101deg, #57ddff 0%, #c058f3 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%, cover;
+    border: 3px solid linear-gradient(101deg, #57ddff 0%, #c058f3 100%);
+    outline: none;
+  }
+  .todoTest ul.todoListTest li.itemTest .words {
+    color: #cacde8;
+    font-family: Josefin Sans;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    padding: 0;
+    word-wrap: break-word;
+    font-size: 15px;
+    max-width: 42%;
+    text-align: left;
+    position: absolute;
+    margin: 0 0 0 4em;
+    line-height: 1.1em;
+  }
+  .todoTest ul.todoListTest li.itemTest .words.active {
+    opacity: 0.3;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    text-decoration: line-through;
+  }
+  .todoTest ul.todoListTest li.itemTest .cross {
+    margin: 0.2em 2em 0 0;
+    cursor: pointer;
+  }
+  .todoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .todoContainer .todoList {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    background-color: #25273c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 7.8em 0 7.8em;
+  }
+  .todoContainer .todoList .todo li {
+    font-family: Josefin Sans;
+    color: #fafafa;
+    padding: 1em 0;
+  }
+  .valueContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .valueContainer .valueWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #25273c;
+    padding: 1em 2em;
+    width: 35em;
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  .valueContainer .valueWrapper .itemsLeftContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #4d5066;
+    font-family: Josefin Sans;
+    font-size: 12px;
+  }
+  .valueContainer .valueWrapper .itemsLeftContainer span {
+    color: #4d5066;
+    padding: 0 0.5em 0 0;
+  }
+  .valueContainer .valueWrapper #clearCompleted {
+    color: #4d5066;
+    font-family: Josefin Sans;
+    padding: 0 0 0 7.5em;
+    font-size: 12px;
+  }
+  .valueContainer .valueWrapper #clearCompleted p {
+    cursor: pointer;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: -2.8em 0 0 0;
+    width: 35em;
+    border-radius: 0.5em;
+    width: 10%;
+  }
+  footer #instructions ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  footer #instructions ul li {
+    font-family: Josefin Sans;
+    padding: 0 0.75em;
+    font-size: 15px;
+  }
+  footer #instructions ul #all {
+    color: #4d5066;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  footer #instructions ul #all.active {
+    color: #3a7bfd;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  footer #instructions ul #active {
+    color: #4d5066;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  footer #instructions ul #active.active {
+    color: #3a7bfd;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  footer #instructions ul #completed {
+    color: #4d5066;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  footer #instructions ul #completed.active {
+    color: #3a7bfd;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */

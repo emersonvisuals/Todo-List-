@@ -1,0 +1,336 @@
+@import "./_variables";
+
+@media only screen and (min-width: 750px) {
+
+    body {
+        background: url(/images/bg-desktop-dark.jpg), black;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100%;
+        
+    }
+
+        
+    header {
+        padding: 7em 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+        .logo {
+            position: absolute;
+            margin: 0 27em 0 0;
+
+            h1 {
+                font-family: $fontFamily;
+                font-weight: 700;
+                color: $veryLightGray;
+                text-transform: uppercase;
+                letter-spacing: 0.25em;
+                animation: logoAnimation 1s ease-in-out;
+            }
+
+            
+        @keyframes logoAnimation {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        }
+
+        #darkToLight {
+            position: absolute;
+            content: '';
+            width:30px;
+            height: 30px;
+            background-image: url(/images/icon-sun.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            animation: iconAnimation 1s ease-in-out;
+            margin: 0 0 0 33em;
+        }
+
+        @keyframes iconAnimation {
+            0% {
+                transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    }
+
+        
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -2em 0 0 0;
+
+        .mainWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $veryDarkDesaturatedBlue;
+            margin: 0 0 1em 0;
+            width: 35em;
+            border-radius: 0.5em;
+            padding: 0 1.8em;
+
+            input#todoInput {
+                border:none;
+                background-color: transparent;
+                box-shadow: transparent;
+                appearance: none;
+                padding: 1.5em 0;
+                outline: none;
+                color:$darkGrayishBlue;
+                text-align: left;
+                width: 35em;
+                font-size: 15px;
+
+            }
+
+            input#todoInput::placeholder {
+                color: $veryDarkGrayishBlue;
+                font-size: 1em;
+            }
+
+            input#todoInput.active::placeholder {
+                visibility: hidden;
+            }
+
+        }
+
+    }
+
+    
+    .todoTest {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        ul.todoListTest {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: $veryDarkDesaturatedBlue;
+            list-style: none;
+
+            li.itemTest {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1em 0.5em;
+                border-bottom: solid $veryDarkGrayishBlue 0.5px;
+                width: 35em;
+            
+
+                .checkBox {
+                    content: '';
+                    margin: 0 0 0 1em;
+                    width:25px;
+                    height: 25px;
+                    border-radius: 100%;
+
+
+                    input#submit {
+                        appearance: none;
+                        background-color: transparent;
+                        border: 1px solid $veryDarkGrayishBlue;
+                        border-radius: 100%;
+                        height: 25px;
+                        width: 25px;
+                        cursor: pointer;
+                    }
+
+                    input#submit:checked {
+                        background: url(/images/icon-check.svg), linear-gradient(101deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 65%, cover;
+                        border:3px solid linear-gradient(101deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%) ;
+                        outline: none;
+                    }
+                }
+                
+                .words {
+                    color: $lightGrayishBlue;
+                    font-family: $fontFamily;
+                    transition: 0.3s all;
+                    padding: 0;
+                    word-wrap:break-word;
+                    font-size: 15px;
+                    max-width: 42%;
+                    text-align: left;
+                    position: absolute;
+                    margin: 0 0 0 4em;
+                    line-height: 1.1em;
+                }
+
+                .words.active {
+                    opacity: 0.3;
+                    transition: 0.3s all;
+                    text-decoration: line-through;
+                }
+
+                .cross {
+                    margin: 0.2em 2em 0 0;
+                    cursor: pointer;
+
+
+                }
+            }
+        }
+    }
+        
+    .todoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .todoList {
+            margin:0;
+            list-style: none;
+            padding: 0;
+            background-color: $veryDarkDesaturatedBlue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 7.8em 0 7.8em;
+        
+
+            .todo li {
+                font-family: $fontFamily;
+                color:  $veryLightGray;
+                padding: 1em 0;
+            }
+        }
+    }
+
+
+
+    .valueContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .valueWrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $veryDarkDesaturatedBlue;
+            padding:1em 2em;
+            width: 35em;
+            border-radius: 0 0 0.5em 0.5em;
+
+
+            .itemsLeftContainer {
+                display: flex;
+                justify-content: space-around;
+                color:  $veryDarkGrayishBlue;
+                font-family: $fontFamily;
+                font-size: 12px;
+
+                span {
+                    color:  $veryDarkGrayishBlue;
+                    padding: 0 0.5em 0 0;
+                }
+            }
+
+            #clearCompleted {
+                color: $veryDarkGrayishBlue;
+                font-family: $fontFamily;
+                padding: 0 0 0 7.5em;
+                font-size: 12px;
+
+                p {
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #instructions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: -2.8em 0 0 0;
+            width: 35em;
+            border-radius: 0.5em;
+            width: 10%;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    font-family: $fontFamily;
+                    padding: 0 0.75em;
+                    font-size: 15px;
+                }
+
+                #all {
+                    color: $veryDarkGrayishBlue;
+                    transition: 0.3s all;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+
+                #all.active {
+                    color: $brightBlue;
+                    transition:  0.3s all;
+                    cursor: pointer;
+                }
+
+                #active {
+                    color:  $veryDarkGrayishBlue;
+                    transition: 0.3s all;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+
+                #active.active {
+                    color: $brightBlue;
+                    transition: 0.3s all;
+                    cursor: pointer;
+                }
+                
+                #completed {
+                    color:  $veryDarkGrayishBlue;
+                    transition: 0.3s all;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+
+                #completed.active {
+                    color: $brightBlue;
+                    transition: 0.3s all;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

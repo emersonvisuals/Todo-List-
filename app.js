@@ -25,9 +25,12 @@ completed.addEventListener('click', function(){
 
 // enter on form
 const input = document.querySelector('#todoInput');
+const inputText = document.querySelector('#todoInput').value;
 const toDoList = document.querySelector('.todoList');
 const todoListTest = document.querySelector('.todoListTest');
 const placeholder = document.querySelector('placeholder');
+
+console.log(inputText);
 
 // enter Function
 input.addEventListener('keydown', function(e) {
@@ -58,8 +61,25 @@ input.addEventListener('keydown', function(e) {
         cross.innerHTML = '<img src="/images/icon-cross.svg" alt="cross">';
         todoLi.appendChild(cross);
 
+        // avoid enter when text isn't provided 
+        console.log(input.value.length);
+
+        function avoidEnter() {
+            if(input.value.length <= 0) {
+                todoLi.removeChild(cross);
+                todoLi.removeChild(text);
+                todoLi.removeChild(checkBox);
+                todoListTest.removeChild(todoLi);
+                span.innerText = +span.innerText - number;
+            } else {
+                return;
+            }
+        }
+        avoidEnter();
+
         // remove text after enter 
         input.value = '';
+
 
 
         // enter Count
@@ -286,6 +306,7 @@ input.addEventListener('keydown', function(e) {
         });
 
         // disable enter 
+        
     } 
 }); 
 
