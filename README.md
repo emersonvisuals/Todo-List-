@@ -10,7 +10,7 @@ Let me know your thoughts on the outcome!
 Thank you! :)
 
 ## View Website Live 👾
-Here is the link to the live website! todo-list-emerson-visuals.netlify.app
+Here is the link to the live website! https://todo-list-emerson-visuals.netlify.app/
 
 ## Socials! 🌎
 @emersonvisuals Instagram
