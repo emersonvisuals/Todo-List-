@@ -13,6 +13,8 @@ Thank you! :)
 Here is the link to the live website! https://todo-list-emerson-visuals.netlify.app/
 
 ## Socials! 🌎
+@emersonvisuals TikTok
+
 @emersonvisuals Instagram
 
 @emersonvisuals Youtube
