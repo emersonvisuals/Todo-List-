@@ -224,6 +224,10 @@ form .mainWrapper input#todoInput.active::placeholder {
   border-bottom: solid #4d5066 0.5px;
 }
 
+.todoTest ul.todoListTest li.itemTest li.itemTest.dragging {
+  width: 10em;
+}
+
 .todoTest ul.todoListTest li.itemTest .checkBox {
   content: '';
   margin: 0 0 0 1em;
@@ -249,8 +253,8 @@ form .mainWrapper input#todoInput.active::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 65%, cover;
-  border: 3px solid linear-gradient(101deg, #57ddff 0%, #c058f3 100%);
   outline: none;
+  border: none;
 }
 
 .todoTest ul.todoListTest li.itemTest .words {

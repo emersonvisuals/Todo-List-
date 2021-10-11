@@ -1,0 +1,97 @@
+@import "./_variables";
+
+@media only screen and (min-width: 750px) {
+    
+    body.light {
+        background: url(/images/bg-desktop-light.jpg), $veryLightGrayishBlue;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100%;
+        
+    }
+
+    header.light {
+        
+        #darkToLight {
+            background-image: url(/images/icon-moon.svg);
+        }
+    }
+
+
+    form.light {
+
+        .mainWrapper {
+            background-color: $veryLightGray;
+
+
+            input#todoInput {
+                color:$darkGrayishBlue;
+            }
+
+            input#todoInput::placeholder {
+                color: $lightGrayishBlue;
+            }
+        }
+    }
+
+
+    .todoTest.light {
+
+        ul.todoListTest {
+            background-color: $veryLightGray;
+            color: $darkGrayishBlue;
+
+            li.itemTest {
+                color: $darkGrayishBlue;
+                border-bottom: solid $lightGrayishBlue 0.05px;
+                
+                .words {
+                    color: $darkGrayishBlue;
+                }
+            }
+        }
+    }
+
+    .valueContainer.light {
+
+        .valueWrapper {
+            background-color: $veryLightGray;
+        }
+    }
+
+
+    footer.light {
+
+        #instructions {
+
+            background-color: $veryLightGray;
+
+            ul {
+
+                #all {
+                    color: $lightGrayishBlue;
+                }
+
+                #all.active {
+                    color: $brightBlue;
+                }
+
+                #active {
+                    color:  $lightGrayishBlue;
+                }
+
+                #active.active {
+                    color: $brightBlue;
+                }
+                
+                #completed {
+                    color:  $lightGrayishBlue;
+                }
+
+                #completed.active {
+                    color: $brightBlue;
+                }
+            }
+        }
+    }
+}

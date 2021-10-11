@@ -60,7 +60,7 @@ footer.light #instructions ul #all {
 }
 
 footer.light #instructions ul #all.active {
-  color: #25273c;
+  color: #3a7bfd;
 }
 
 footer.light #instructions ul #active {
@@ -68,7 +68,7 @@ footer.light #instructions ul #active {
 }
 
 footer.light #instructions ul #active.active {
-  color: #25273c;
+  color: #3a7bfd;
 }
 
 footer.light #instructions ul #completed {
@@ -76,6 +76,6 @@ footer.light #instructions ul #completed {
 }
 
 footer.light #instructions ul #completed.active {
-  color: #25273c;
+  color: #3a7bfd;
 }
 /*# sourceMappingURL=lightMode.css.map */

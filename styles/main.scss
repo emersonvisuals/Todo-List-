@@ -132,6 +132,10 @@ form {
             padding: 1em 0;
             border-bottom: solid $veryDarkGrayishBlue 0.5px;
         
+        li.itemTest.dragging {
+            width:10em;
+        }
+        
 
             .checkBox {
                 content: '';
@@ -156,8 +160,8 @@ form {
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 65%, cover;
-                    border:3px solid linear-gradient(101deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%) ;
                     outline: none;
+                    border: none;
                 }
             }
             

@@ -1,0 +1,65 @@
+@media only screen and (min-width: 750px) {
+  body.light {
+    background: url(/images/bg-desktop-light.jpg), #e4e5f1;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+  }
+  header.light #darkToLight {
+    background-image: url(/images/icon-moon.svg);
+  }
+  form.light .mainWrapper {
+    background-color: #fafafa;
+  }
+  form.light .mainWrapper input#todoInput {
+    color: #777a92;
+  }
+  form.light .mainWrapper input#todoInput::-webkit-input-placeholder {
+    color: #cacde8;
+  }
+  form.light .mainWrapper input#todoInput:-ms-input-placeholder {
+    color: #cacde8;
+  }
+  form.light .mainWrapper input#todoInput::-ms-input-placeholder {
+    color: #cacde8;
+  }
+  form.light .mainWrapper input#todoInput::placeholder {
+    color: #cacde8;
+  }
+  .todoTest.light ul.todoListTest {
+    background-color: #fafafa;
+    color: #777a92;
+  }
+  .todoTest.light ul.todoListTest li.itemTest {
+    color: #777a92;
+    border-bottom: solid #cacde8 0.05px;
+  }
+  .todoTest.light ul.todoListTest li.itemTest .words {
+    color: #777a92;
+  }
+  .valueContainer.light .valueWrapper {
+    background-color: #fafafa;
+  }
+  footer.light #instructions {
+    background-color: #fafafa;
+  }
+  footer.light #instructions ul #all {
+    color: #cacde8;
+  }
+  footer.light #instructions ul #all.active {
+    color: #3a7bfd;
+  }
+  footer.light #instructions ul #active {
+    color: #cacde8;
+  }
+  footer.light #instructions ul #active.active {
+    color: #3a7bfd;
+  }
+  footer.light #instructions ul #completed {
+    color: #cacde8;
+  }
+  footer.light #instructions ul #completed.active {
+    color: #3a7bfd;
+  }
+}
+/*# sourceMappingURL=desktopLight.css.map */

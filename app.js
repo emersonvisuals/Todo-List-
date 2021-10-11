@@ -40,6 +40,7 @@ input.addEventListener('keydown', function(e) {
         
         // create li
         const todoLi = document.createElement('li');
+        todoLi.setAttribute('draggable', true);
         todoLi.classList.add('itemTest');
         todoListTest.appendChild(todoLi);
 
@@ -304,10 +305,55 @@ input.addEventListener('keydown', function(e) {
             completedTasksClearCompleted();
 
         });
-
-        // disable enter 
         
-    } 
+        // drag and drop
+        draggables = document.querySelectorAll('.itemTest');
+        container = document.querySelector('.todoListTest');
+
+
+        draggables.forEach(draggable => {
+            
+            draggable.addEventListener('dragstart', () => {
+                console.log('drag start');
+                draggable.classList.add('dragging');
+            });
+
+            draggable.addEventListener('dragend', () => {
+                console.log('drag end');
+                draggable.classList.remove('dragging');
+            });
+
+        });
+
+        container.addEventListener('dragover', e => {
+            e.preventDefault();
+            const afterElement =  getDragAfterElement(container, e.clientY)
+            console.log(afterElement)
+            const draggable = document.querySelector('.dragging');
+            if (afterElement == null) {
+                container.appendChild(draggable);
+            } else {
+                container.insertBefore(draggable, afterElement)
+            }
+        });
+
+        function getDragAfterElement(container, y) {
+            const draggableElements = [...container.querySelectorAll('.itemTest:not(.dragging)')];
+
+            return draggableElements.reduce((closest, child) => {
+                const box = child.getBoundingClientRect()
+                const offset = y - box.top - box.height / 2
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child } 
+                } else {
+                    return closest
+                }
+
+            }, { offset: Number.NEGATIVE_INFINITY }).element 
+        }
+    
+        
+    }
 }); 
 
 

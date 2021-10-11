@@ -167,6 +167,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .todoTest ul.todoListTest.dragging {
+    background-color: red;
+  }
   .todoTest ul.todoListTest {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -197,6 +200,10 @@
     border-bottom: solid #4d5066 0.5px;
     width: 35em;
   }
+  .todoTest ul.todoListTest li.itemTest li.itemTest.dragging {
+    padding: 3em;
+    width: 20em;
+  }
   .todoTest ul.todoListTest li.itemTest .checkBox {
     content: '';
     margin: 0 0 0 1em;
@@ -220,7 +227,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 65%, cover;
-    border: 3px solid linear-gradient(101deg, #57ddff 0%, #c058f3 100%);
     outline: none;
   }
   .todoTest ul.todoListTest li.itemTest .words {
@@ -308,6 +314,8 @@
     padding: 1em 2em;
     width: 35em;
     border-radius: 0 0 0.5em 0.5em;
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
   }
   .valueContainer .valueWrapper .itemsLeftContainer {
     display: -webkit-box;
@@ -317,7 +325,7 @@
         justify-content: space-around;
     color: #4d5066;
     font-family: Josefin Sans;
-    font-size: 12px;
+    font-size: 13px;
   }
   .valueContainer .valueWrapper .itemsLeftContainer span {
     color: #4d5066;
@@ -327,7 +335,7 @@
     color: #4d5066;
     font-family: Josefin Sans;
     padding: 0 0 0 7.5em;
-    font-size: 12px;
+    font-size: 13px;
   }
   .valueContainer .valueWrapper #clearCompleted p {
     cursor: pointer;
@@ -342,6 +350,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: none;
   }
   footer #instructions {
     display: -webkit-box;
@@ -355,9 +364,9 @@
             align-items: center;
     padding: 0;
     margin: -2.8em 0 0 0;
-    width: 35em;
     border-radius: 0.5em;
-    width: 10%;
+    background-color: none;
+    width: 0%;
   }
   footer #instructions ul {
     display: -webkit-box;
@@ -372,11 +381,12 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    background-color: none;
   }
   footer #instructions ul li {
     font-family: Josefin Sans;
     padding: 0 0.75em;
-    font-size: 15px;
+    font-size: 13px;
   }
   footer #instructions ul #all {
     color: #4d5066;
@@ -418,4 +428,4 @@
     cursor: pointer;
   }
 }
-/*# sourceMappingURL=desktop.css.map */
+/*# sourceMappingURL=desktopDark.css.map */
