@@ -18,19 +18,19 @@ form.light .mainWrapper input#todoInput {
 }
 
 form.light .mainWrapper input#todoInput::-webkit-input-placeholder {
-  color: #cacde8;
+  color: #fafafa;
 }
 
 form.light .mainWrapper input#todoInput:-ms-input-placeholder {
-  color: #cacde8;
+  color: #fafafa;
 }
 
 form.light .mainWrapper input#todoInput::-ms-input-placeholder {
-  color: #cacde8;
+  color: #fafafa;
 }
 
 form.light .mainWrapper input#todoInput::placeholder {
-  color: #cacde8;
+  color: #fafafa;
 }
 
 .todoTest.light ul.todoListTest {
@@ -77,5 +77,24 @@ footer.light #instructions ul #completed {
 
 footer.light #instructions ul #completed.active {
   color: #3a7bfd;
+}
+
+div.dragInstruction.light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 0 0 3em 0;
+}
+
+div.dragInstruction.light p {
+  color: #cacde8;
+  font-family: Josefin Sans;
 }
 /*# sourceMappingURL=lightMode.css.map */

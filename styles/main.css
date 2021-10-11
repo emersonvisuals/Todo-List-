@@ -21,6 +21,29 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 1em 0;
+  /*
+    @keyframes iconAnimation {
+        0% {
+            transform: translateX(200px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    */
+}
+
+header .logo {
+  /*   
+    @keyframes logoAnimation {
+        0% {
+            transform: translateX(-200px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    */
 }
 
 header .logo h1 {
@@ -33,28 +56,6 @@ header .logo h1 {
           animation: logoAnimation 1s ease-in-out;
 }
 
-@-webkit-keyframes logoAnimation {
-  0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes logoAnimation {
-  0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 header #darkToLight {
   content: '';
   width: 30px;
@@ -63,30 +64,6 @@ header #darkToLight {
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
-  -webkit-animation: iconAnimation 1s ease-in-out;
-          animation: iconAnimation 1s ease-in-out;
-}
-
-@-webkit-keyframes iconAnimation {
-  0% {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes iconAnimation {
-  0% {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
 }
 
 form {
@@ -474,5 +451,24 @@ footer #instructions ul #completed.active {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
+}
+
+.dragInstruction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 0 0 3em 0;
+}
+
+.dragInstruction p {
+  color: #4d5066;
+  font-family: Josefin Sans;
 }
 /*# sourceMappingURL=main.css.map */

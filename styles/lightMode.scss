@@ -27,7 +27,7 @@ form.light {
         }
 
         input#todoInput::placeholder {
-            color: $lightGrayishBlue;
+            color: $veryLightGray;
         }
     }
 }
@@ -90,5 +90,18 @@ footer.light {
                 color: $brightBlue;
             }
         }
+    }
+}
+
+div.dragInstruction.light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0 3em 0;
+
+    p {
+        color: $lightGrayishBlue;
+        font-family: $fontFamily;
     }
 }

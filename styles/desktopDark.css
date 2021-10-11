@@ -14,10 +14,30 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
+    /*
+        @keyframes iconAnimation {
+            0% {
+                transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        */
   }
   header .logo {
     position: absolute;
     margin: 0 27em 0 0;
+    /*  
+        @keyframes logoAnimation {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+         */
   }
   header .logo h1 {
     font-family: Josefin Sans;
@@ -25,28 +45,6 @@
     color: #fafafa;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    -webkit-animation: logoAnimation 1s ease-in-out;
-            animation: logoAnimation 1s ease-in-out;
-  }
-  @-webkit-keyframes logoAnimation {
-    0% {
-      -webkit-transform: translateX(-200px);
-              transform: translateX(-200px);
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
-  }
-  @keyframes logoAnimation {
-    0% {
-      -webkit-transform: translateX(-200px);
-              transform: translateX(-200px);
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
   }
   header #darkToLight {
     position: absolute;
@@ -57,29 +55,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
-    -webkit-animation: iconAnimation 1s ease-in-out;
-            animation: iconAnimation 1s ease-in-out;
     margin: 0 0 0 33em;
-  }
-  @-webkit-keyframes iconAnimation {
-    0% {
-      -webkit-transform: translateX(200px);
-              transform: translateX(200px);
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
-  }
-  @keyframes iconAnimation {
-    0% {
-      -webkit-transform: translateX(200px);
-              transform: translateX(200px);
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
   }
   form {
     display: -webkit-box;
@@ -351,6 +327,7 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: none;
+    padding: 0 0 3em 0;
   }
   footer #instructions {
     display: -webkit-box;

@@ -27,10 +27,10 @@
                 color: $veryLightGray;
                 text-transform: uppercase;
                 letter-spacing: 0.25em;
-                animation: logoAnimation 1s ease-in-out;
+            //    animation: logoAnimation 1s ease-in-out;
             }
 
-            
+        /*  
         @keyframes logoAnimation {
             0% {
                 transform: translateX(-200px);
@@ -39,7 +39,9 @@
                 transform: translateX(0px);
             }
         }
+         */
         }
+       
 
         #darkToLight {
             position: absolute;
@@ -50,10 +52,11 @@
             background-repeat: no-repeat;
             background-size: contain;
             cursor: pointer;
-            animation: iconAnimation 1s ease-in-out;
+        //  animation: iconAnimation 1s ease-in-out;
             margin: 0 0 0 33em;
         }
 
+        /*
         @keyframes iconAnimation {
             0% {
                 transform: translateX(200px);
@@ -62,6 +65,7 @@
                 transform: translateX(0px);
             }
         }
+        */
     }
 
         
@@ -277,6 +281,7 @@
         justify-content: center;
         align-items: center;
         background-color: none;
+        padding: 0 0 3em 0;
 
         #instructions {
             display: flex;

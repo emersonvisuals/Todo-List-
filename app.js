@@ -63,7 +63,6 @@ input.addEventListener('keydown', function(e) {
         todoLi.appendChild(cross);
 
         // avoid enter when text isn't provided 
-        console.log(input.value.length);
 
         function avoidEnter() {
             if(input.value.length <= 0) {
@@ -328,7 +327,6 @@ input.addEventListener('keydown', function(e) {
         container.addEventListener('dragover', e => {
             e.preventDefault();
             const afterElement =  getDragAfterElement(container, e.clientY)
-            console.log(afterElement)
             const draggable = document.querySelector('.dragging');
             if (afterElement == null) {
                 container.appendChild(draggable);
@@ -365,6 +363,7 @@ let todoListLight = document.querySelector('.todoTest');
 let valueContainerLight = document.querySelector('.valueContainer');
 let formLight = document.querySelector('form');
 let footer = document.querySelector('footer');
+let instruction = document.querySelector('.dragInstruction');
 
 
 lightButton.addEventListener('click', function(){
@@ -375,4 +374,5 @@ lightButton.addEventListener('click', function(){
     valueContainerLight.classList.toggle('light');
     formLight.classList.toggle('light');
     footer.classList.toggle('light');
+    instruction.classList.toggle('light');
 });
