@@ -404,5 +404,23 @@
     transition: 0.3s all;
     cursor: pointer;
   }
+  .dragInstruction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding: 0 0 3em 0;
+    visibility: visible;
+  }
+  .dragInstruction p {
+    color: #4d5066;
+    font-family: Josefin Sans;
+  }
 }
 /*# sourceMappingURL=desktopDark.css.map */

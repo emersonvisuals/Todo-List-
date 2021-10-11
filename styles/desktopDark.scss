@@ -350,4 +350,18 @@
         }
     }
 
+    .dragInstruction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0 0 3em 0;
+        visibility:visible;
+    
+        p {
+            color: $veryDarkGrayishBlue;
+            font-family: $fontFamily;
+        }
+    }
+
 }

@@ -18,19 +18,19 @@ form.light .mainWrapper input#todoInput {
 }
 
 form.light .mainWrapper input#todoInput::-webkit-input-placeholder {
-  color: #fafafa;
+  color: #cacde8;
 }
 
 form.light .mainWrapper input#todoInput:-ms-input-placeholder {
-  color: #fafafa;
+  color: #cacde8;
 }
 
 form.light .mainWrapper input#todoInput::-ms-input-placeholder {
-  color: #fafafa;
+  color: #cacde8;
 }
 
 form.light .mainWrapper input#todoInput::placeholder {
-  color: #fafafa;
+  color: #cacde8;
 }
 
 .todoTest.light ul.todoListTest {
